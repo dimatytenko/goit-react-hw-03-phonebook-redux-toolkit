@@ -12,24 +12,6 @@ export class App extends Component {
     showModal: false,
   };
 
-  // componentDidMount() {
-  //   const contacts = localStorage.getItem('contacts');
-  //   const parseContacts = JSON.parse(contacts);
-
-  //   if (parseContacts) {
-  //     this.setState({ contacts: parseContacts });
-  //   }
-  // }
-
-  // componentDidUpdate(prevProps, prevState) {
-  //   const nextContacts = this.state.contacts;
-  //   const prevContacts = prevState.contacts;
-
-  //   if (nextContacts !== prevContacts) {
-  //     localStorage.setItem('contacts', JSON.stringify(nextContacts));
-  //   }
-  // }
-
   toggleModal = () => {
     this.setState(({ showModal }) => ({
       showModal: !showModal,

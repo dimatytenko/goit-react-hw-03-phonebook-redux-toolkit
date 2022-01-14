@@ -8,14 +8,14 @@ import contactsAction from '../../redux/contacts/contacts-actions';
 
 function ContactItem({ name, number, onDelete }) {
   return (
-    <li className="contact__item">
-      <div className="contact">
+    <div className="contact">
+      <li className="contact__item">
         {name}: {number}
         <IconButton aria-label="minus" onClick={() => onDelete(name)}>
           <MinusIcon width="20" height="20" />
         </IconButton>
-      </div>
-    </li>
+      </li>
+    </div>
   );
 }
 
